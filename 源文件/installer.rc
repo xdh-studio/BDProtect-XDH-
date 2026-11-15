@@ -1,0 +1,15 @@
+#include <windows.h>
+
+// 安装程序自身的图标（使用 install.ico）
+1 ICON "install.ico"
+
+// 安装包只包含核心程序与必要配置：
+// 病毒库（Wildlist.txt / WildlistVersion.txt）由控制中心联网下载；
+// 工具箱程序（uninstall1.exe 等）也由服务器按需下载。
+102 RCDATA "BDMain.exe"
+103 RCDATA "BDProtect.exe"
+112 RCDATA "Uninstall.exe"
+117 RCDATA "main.ico"
+119 RCDATA "BDProtectVersion.txt"
+120 RCDATA "IPconfig.ini"
+121 RCDATA "libwinpthread-1.dll"
